@@ -1,0 +1,23 @@
+{
+  "name": "impel",
+  "version": "0.1.0",
+  "description": "Argument enforcement",
+  "main": "./dist/impel.js",
+  "scripts": {
+    "test": "npm run compile && mocha --compilers coffee:coffee-script/register test/test.coffee -R spec",
+    "compile": "coffee -cb -o ./dist ./src/impel.coffee",
+    "watch": "coffee -wb -o ./dist ./src/impel.coffee"
+  },
+  "keywords": [
+    "argument",
+    "type",
+    "type-error"
+  ],
+  "author": "Nick Bottomley (github.com/nickb1080)",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "coffee-script": "^1.8.0",
+    "mocha": "^1.21.4"
+  }
+}
